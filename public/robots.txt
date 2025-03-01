@@ -1,0 +1,8 @@
+User's request for the contents of the file: /timesheets-app/timesheets-app/public/robots.txt
+
+User's project structure indicates that this file is used to control how search engines index the site.
+
+Here are the contents for the robots.txt file:
+
+User-agent: *
+Disallow: /

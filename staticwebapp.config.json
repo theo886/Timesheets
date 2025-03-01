@@ -8,16 +8,25 @@
     {
       "route": "/api/*",
       "serve": "/api/index.js",
-      "statusCode": 200
+      "statusCode": 200,
+      "methods": ["GET", "POST", "PUT", "DELETE"],
+      "headers": {
+        "Content-Type": "application/json"
+      }
     },
     {
       "route": "/{*}",
       "serve": "/index.html",
       "statusCode": 404
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
     }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/api/*"]
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
   }
 }
